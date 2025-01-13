@@ -26,6 +26,9 @@ resource "github_branch_default" "default" {
   branch     = github_branch.main.branch
 }
 
-# resource "github_issue_labels" "repo" {
-#   repository = github_repository.repo.name
-# }
+resource "github_branch_protection" "main" {
+  repository_id = github_repository.repo.name
+  pattern          = github_branch.main.branch
+  enforce_admins   = true
+  allows_deletions = false
+}

@@ -27,7 +27,7 @@ resource "github_branch_default" "default" {
 }
 
 resource "github_branch_protection" "main" {
-  repository_id = github_repository.repo.name
+  repository_id    = github_repository.repo.name
   pattern          = github_branch.main.branch
   enforce_admins   = true
   allows_deletions = false

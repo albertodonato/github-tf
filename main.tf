@@ -33,6 +33,13 @@ module "lxstats" {
   description = "Python library to access process and system stats from /proc and /sys on Linux"
 }
 
+module "metapackages" {
+  source = "./modules/repo"
+
+  name        = "metapackages"
+  description = "Script to build distribution metapackages and a repository for them"
+}
+
 module "pelican_chemistry" {
   source = "./modules/repo"
 

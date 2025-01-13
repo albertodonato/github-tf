@@ -5,11 +5,14 @@ resource "github_repository" "repo" {
 
   auto_init = false
 
-  has_issues           = true
-  has_wiki             = false
-  has_projects         = false
-  has_discussions      = var.has_discussions
-  allow_update_branch  = true
+  has_issues      = var.has_issues
+  has_wiki        = var.has_wiki
+  has_projects    = false
+  has_discussions = var.has_discussions
+
+  allow_update_branch    = true
+  delete_branch_on_merge = true
+
   vulnerability_alerts = true
 }
 

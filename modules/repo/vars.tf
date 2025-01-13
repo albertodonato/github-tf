@@ -15,7 +15,19 @@ variable "homepage_url" {
 }
 
 variable "has_discussions" {
-  description = "Enable discussions"
+  description = "Whether to enable discussions"
+  type        = bool
+  default     = false
+}
+
+variable "has_issues" {
+  description = "Whether to enable issues"
+  type        = bool
+  default     = true
+}
+
+variable "has_wiki" {
+  description = "Whether to enable wiki"
   type        = bool
   default     = false
 }

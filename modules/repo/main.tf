@@ -10,6 +10,9 @@ resource "github_repository" "repo" {
   has_projects    = false
   has_discussions = var.has_discussions
 
+  allow_merge_commit     = false
+  allow_rebase_merge     = false
+  allow_squash_merge     = true
   allow_update_branch    = true
   delete_branch_on_merge = true
 

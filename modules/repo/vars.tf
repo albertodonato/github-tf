@@ -31,3 +31,17 @@ variable "has_wiki" {
   type        = bool
   default     = false
 }
+
+variable "extra_issue_labels" {
+  description = "Issue labels to add to the builtin ones"
+  type = list(
+    object(
+      {
+        name        = string
+        description = string
+        color       = string
+      }
+    )
+  )
+  default = []
+}

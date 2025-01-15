@@ -80,6 +80,23 @@ module "query_exporter" {
 
   name        = "query-exporter"
   description = "Export Prometheus metrics from SQL queries"
+  extra_issue_labels = [
+    {
+      name        = "github_actions"
+      description = "Pull requests that update GitHub Actions code"
+      color       = "000000"
+    },
+    {
+      name        = "dependencies"
+      description = "Pull requests that update a dependency file"
+      color       = "0366d6"
+    },
+    {
+      name        = "python"
+      description = "Pull requests that update Python code"
+      color       = "2b67c6"
+    },
+  ]
 }
 
 module "quickrepo" {

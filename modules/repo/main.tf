@@ -2,6 +2,7 @@ resource "github_repository" "repo" {
   name         = var.name
   description  = var.description
   homepage_url = var.homepage_url
+  topics       = var.topics
 
   auto_init = false
 

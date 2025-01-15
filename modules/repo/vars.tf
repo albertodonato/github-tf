@@ -8,6 +8,12 @@ variable "description" {
   type        = string
 }
 
+variable "topics" {
+  description = "List of repository topics"
+  type        = list(string)
+  default     = []
+}
+
 variable "homepage_url" {
   description = "Project homepage URL"
   type        = string

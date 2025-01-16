@@ -44,7 +44,7 @@ variable "extra_issue_labels" {
     object(
       {
         name        = string
-        description = string
+        description = optional(string)
         color       = string
       }
     )

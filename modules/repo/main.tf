@@ -4,7 +4,7 @@ resource "github_repository" "repo" {
   homepage_url = var.homepage_url
   topics       = var.topics
 
-  auto_init = false
+  auto_init = true
 
   has_issues      = var.has_issues
   has_wiki        = var.has_wiki

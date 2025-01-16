@@ -12,6 +12,8 @@ module "bash_d" {
   name        = "bash.d"
   description = "My own bash setup"
   topics      = ["bash", "bashrc-configs", "shell"]
+
+  has_issues = false
 }
 
 module "dot_emacs_d" {
@@ -24,6 +26,21 @@ module "dot_emacs_d" {
     "emacs-configuration",
     "emacs-lisp",
   ]
+
+  has_issues = false
+}
+
+module "github_tf" {
+  source = "./modules/repo"
+
+  name        = "github-tf"
+  description = "Terraform setup for GitHub repositories"
+  topics = [
+    "terraform",
+    "github",
+  ]
+
+  has_issues = false
 }
 
 module "h2static" {

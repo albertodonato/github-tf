@@ -177,6 +177,8 @@ module "query_exporter" {
       color       = "2b67c6"
     },
   ]
+
+  has_discussions = true
 }
 
 module "quickrepo" {

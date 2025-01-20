@@ -3,7 +3,10 @@ module "ads_b_snap" {
 
   name        = "ads-b-snap"
   description = "Snap package for ADS-B, Mode S, and Mode 3A/3C demodulator and decoder"
-  topics      = ["ads-b", "snap"]
+  topics = [
+    "ads-b",
+    "snap",
+  ]
 }
 
 module "bash_d" {
@@ -11,7 +14,11 @@ module "bash_d" {
 
   name        = "bash.d"
   description = "My own bash setup"
-  topics      = ["bash", "bashrc-configs", "shell"]
+  topics = [
+    "bash",
+    "bashrc-configs",
+    "shell",
+  ]
 
   has_issues = false
 }

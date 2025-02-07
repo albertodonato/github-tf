@@ -23,11 +23,21 @@ module "bash_d" {
   has_issues = false
 }
 
+module "blog" {
+  source = "./modules/repo"
+
+  name        = "blog"
+  description = "My personal blog"
+  topics = [
+    "blog",
+  ]
+}
+
 module "dot_emacs_d" {
   source = "./modules/repo"
 
   name        = "dot-emacs.d"
-  description = "~ack/.emacs.d (my own Emacs config)"
+  description = "My own Emacs config"
   topics = [
     "emacs",
     "emacs-configuration",

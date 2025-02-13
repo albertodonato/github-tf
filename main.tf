@@ -28,9 +28,14 @@ module "blog" {
 
   name        = "blog"
   description = "My personal blog"
+  homepage_url = "https://blog.albertodonato.net"
   topics = [
     "blog",
+    "pelican",
   ]
+
+  has_pages   = true
+  pages_cname = "blog.albertodonato.net"
 }
 
 module "dot_emacs_d" {

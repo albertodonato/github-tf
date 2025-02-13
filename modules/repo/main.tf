@@ -18,4 +18,12 @@ resource "github_repository" "repo" {
   delete_branch_on_merge = true
 
   vulnerability_alerts = true
+
+  dynamic "pages" {
+    for_each = var.has_pages ? [true] : []
+    content {
+      build_type = "workflow"
+      cname      = var.pages_cname
+    }
+  }
 }

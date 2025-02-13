@@ -32,6 +32,12 @@ variable "has_issues" {
   default     = true
 }
 
+variable "has_pages" {
+  description = "Whether to enable GitHub Pages"
+  type        = bool
+  default     = false
+}
+
 variable "has_wiki" {
   description = "Whether to enable wiki"
   type        = bool
@@ -50,4 +56,10 @@ variable "extra_issue_labels" {
     )
   )
   default = []
+}
+
+variable "pages_cname" {
+  description = "CNAME for GitHub Pages custom domain"
+  type        = string
+  default     = null
 }

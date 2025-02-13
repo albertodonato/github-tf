@@ -26,8 +26,8 @@ module "bash_d" {
 module "blog" {
   source = "./modules/repo"
 
-  name        = "blog"
-  description = "My personal blog"
+  name         = "blog"
+  description  = "My personal blog"
   homepage_url = "https://blog.albertodonato.net"
   topics = [
     "blog",

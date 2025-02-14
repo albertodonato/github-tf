@@ -1,5 +1,5 @@
 module "ads_b_snap" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "ads-b-snap"
   description = "Snap package for ADS-B, Mode S, and Mode 3A/3C demodulator and decoder"
@@ -10,7 +10,7 @@ module "ads_b_snap" {
 }
 
 module "bash_d" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "bash.d"
   description = "My own bash setup"
@@ -24,7 +24,7 @@ module "bash_d" {
 }
 
 module "blog" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name         = "blog"
   description  = "My personal blog"
@@ -39,7 +39,7 @@ module "blog" {
 }
 
 module "dot_emacs_d" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "dot-emacs.d"
   description = "My own Emacs config"
@@ -53,7 +53,7 @@ module "dot_emacs_d" {
 }
 
 module "github_tf" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "github-tf"
   description = "Terraform setup for GitHub repositories"
@@ -66,7 +66,7 @@ module "github_tf" {
 }
 
 module "h2static" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "h2static"
   description = "Tiny static web server with TLS and HTTP/2 support"
@@ -82,7 +82,7 @@ module "h2static" {
 }
 
 module "lxstats" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "lxstats"
   description = "Python library to access process and system stats from /proc and /sys on Linux"
@@ -96,7 +96,7 @@ module "lxstats" {
 }
 
 module "metapackages" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "metapackages"
   description = "Script to build distribution metapackages and a repository for them"
@@ -109,7 +109,7 @@ module "metapackages" {
 }
 
 module "pelican_chemistry" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "pelican-chemistry"
   description = "A minimalistic responsive Pelican theme"
@@ -120,7 +120,7 @@ module "pelican_chemistry" {
 }
 
 module "process_stats_exporter" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "process-stats-exporter"
   description = "Export Prometheus metrics about processes and tasks"
@@ -133,7 +133,7 @@ module "process_stats_exporter" {
 }
 
 module "prometheus_aioexporter" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "prometheus-aioexporter"
   description = "Asyncio library for creating Prometheus exporters"
@@ -148,7 +148,7 @@ module "prometheus_aioexporter" {
 }
 
 module "pylsp_snap" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "pylsp-snap"
   description = "Snap for the python-lsp-server"
@@ -161,7 +161,7 @@ module "pylsp_snap" {
 }
 
 module "python_skeleton" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "python-skeleton"
   description = "Helper script to setup Python projects"
@@ -169,7 +169,7 @@ module "python_skeleton" {
 }
 
 module "query_exporter" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "query-exporter"
   description = "Export Prometheus metrics from SQL queries"
@@ -204,7 +204,7 @@ module "query_exporter" {
 }
 
 module "quickrepo" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "quickrepo"
   description = "Script to build a Debian repository from a set of .deb or .changes files"
@@ -219,7 +219,7 @@ module "quickrepo" {
 }
 
 module "rtlsdr_snap" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name         = "rtlsdr-snap"
   description  = "Snap package for RTL-SDR tools"
@@ -233,7 +233,7 @@ module "rtlsdr_snap" {
 }
 
 module "snap_helpers" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "snap-helpers"
   description = "Interact with the Snap system within a Snap"
@@ -246,7 +246,7 @@ module "snap_helpers" {
 }
 
 module "sonarr_snap" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name         = "sonarr-snap"
   description  = "Snap for the Sonarr smart PVR"
@@ -259,7 +259,7 @@ module "sonarr_snap" {
 }
 
 module "sshoot" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "sshoot"
   description = "Manage sshuttle VPN sessions"
@@ -271,7 +271,7 @@ module "sshoot" {
 }
 
 module "toolrack" {
-  source = "./modules/repo"
+  source = "./repo"
 
   name        = "toolrack"
   description = "Collection of reusable functions and classes, and a few scripts too"

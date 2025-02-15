@@ -34,7 +34,7 @@ module "blog" {
     "pelican",
   ]
 
-  has_issues = false
+  has_issues  = false
   has_pages   = true
   pages_cname = "blog.albertodonato.net"
 }

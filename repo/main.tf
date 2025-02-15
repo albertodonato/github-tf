@@ -19,6 +19,15 @@ resource "github_repository" "repo" {
 
   vulnerability_alerts = true
 
+  security_and_analysis {
+    secret_scanning {
+      status = "enabled"
+    }
+    secret_scanning_push_protection {
+      status = "enabled"
+    }
+  }
+
   dynamic "pages" {
     for_each = var.has_pages ? [true] : []
     content {

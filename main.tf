@@ -99,8 +99,9 @@ module "lxstats" {
 module "metapackages" {
   source = "./repo"
 
-  name        = "metapackages"
-  description = "Script to build distribution metapackages and a repository for them"
+  name         = "metapackages"
+  description  = "Script to build distribution metapackages and a repository for them"
+  homepage_url = "https://repo.albertodonato.net"
   topics = [
     "deb",
     "debian",
@@ -108,7 +109,9 @@ module "metapackages" {
     "packaging",
   ]
 
-  has_issues = false
+  has_issues  = false
+  has_pages   = true
+  pages_cname = "repo.albertodonato.net"
 }
 
 module "pelican_chemistry" {

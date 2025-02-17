@@ -107,6 +107,8 @@ module "metapackages" {
     "arch",
     "packaging",
   ]
+
+  has_issues = false
 }
 
 module "pelican_chemistry" {
@@ -167,6 +169,8 @@ module "python_skeleton" {
   name        = "python-skeleton"
   description = "Helper script to setup Python projects"
   topics      = ["python"]
+
+  has_issues = false
 }
 
 module "query_exporter" {

@@ -35,4 +35,10 @@ resource "github_repository" "repo" {
       cname      = var.pages_cname
     }
   }
+
+  lifecycle {
+    ignore_changes = [
+      pages[0].source, # source is not used for workflow builds
+    ]
+  }
 }

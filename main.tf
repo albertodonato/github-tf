@@ -100,7 +100,7 @@ module "metapackages" {
   source = "./repo"
 
   name         = "metapackages"
-  description  = "Script to build distribution metapackages and a repository for them"
+  description  = "Repository with metapackages"
   homepage_url = "https://repo.albertodonato.net"
   topics = [
     "deb",

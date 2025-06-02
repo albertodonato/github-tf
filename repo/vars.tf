@@ -44,6 +44,12 @@ variable "has_wiki" {
   default     = false
 }
 
+variable "dependencies_labels" {
+  description = "Name for labels for dependencies upgrade"
+  type        = list(string)
+  default     = []
+}
+
 variable "extra_issue_labels" {
   description = "Issue labels to add to the builtin ones"
   type = list(

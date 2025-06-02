@@ -46,6 +46,21 @@ locals {
       color       = "ffffff"
     },
   ]
+
+  dependencies_labels = {
+    dependencies = {
+      description = "Pull requests that update a dependency file"
+      color       = "0366d6"
+    }
+    github_actions = {
+      description = "Pull requests that update GitHub Actions code"
+      color       = "000000"
+    }
+    python = {
+      description = "Pull requests that update python code"
+      color       = "2b67c6"
+    }
+  }
 }
 
 resource "github_issue_labels" "repo" {
@@ -54,6 +69,10 @@ resource "github_issue_labels" "repo" {
   dynamic "label" {
     for_each = concat(
       local.default_issue_labels,
+      [
+        for name in var.dependencies_labels :
+        merge(local.dependencies_labels[name], { name = name })
+      ],
       var.extra_issue_labels,
     )
 

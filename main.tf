@@ -33,6 +33,10 @@ module "blog" {
     "blog",
     "pelican",
   ]
+  dependencies_labels = [
+    "dependencies",
+    "python",
+  ]
 
   has_issues  = false
   has_pages   = true
@@ -190,22 +194,10 @@ module "query_exporter" {
     "query",
     "sql",
   ]
-  extra_issue_labels = [
-    {
-      name        = "github_actions"
-      description = "Pull requests that update GitHub Actions code"
-      color       = "000000"
-    },
-    {
-      name        = "dependencies"
-      description = "Pull requests that update a dependency file"
-      color       = "0366d6"
-    },
-    {
-      name        = "python"
-      description = "Pull requests that update Python code"
-      color       = "2b67c6"
-    },
+  dependencies_labels = [
+    "github_actions",
+    "dependencies",
+    "python",
   ]
 
   has_discussions = true

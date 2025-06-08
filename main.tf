@@ -155,6 +155,10 @@ module "prometheus_aioexporter" {
     "prometheus-exporter",
     "python-library",
   ]
+  dependencies_labels = [
+    "github_actions",
+    "dependencies",
+  ]
 }
 
 module "pylsp_snap" {

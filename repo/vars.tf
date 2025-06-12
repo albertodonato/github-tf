@@ -64,6 +64,12 @@ variable "extra_issue_labels" {
   default = []
 }
 
+variable "action_variables" {
+  description = "Environment variables for actions"
+  type        = map(string)
+  default     = {}
+}
+
 variable "pages_cname" {
   description = "CNAME for GitHub Pages custom domain"
   type        = string

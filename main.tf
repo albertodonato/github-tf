@@ -190,6 +190,9 @@ module "query_exporter" {
     "dependencies",
     "python",
   ]
+  action_variables = {
+    DOCKERHUB_USERNAME = "adonato"
+  }
 
   has_discussions = true
 }

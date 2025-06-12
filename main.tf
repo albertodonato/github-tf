@@ -161,19 +161,6 @@ module "prometheus_aioexporter" {
   ]
 }
 
-module "pylsp_snap" {
-  source = "./repo"
-
-  name        = "pylsp-snap"
-  description = "Snap for the python-lsp-server"
-  topics = [
-    "lsp",
-    "lsp-server",
-    "python-language-server",
-    "snap",
-  ]
-}
-
 module "python_skeleton" {
   source = "./repo"
 

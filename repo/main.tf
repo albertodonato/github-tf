@@ -17,6 +17,9 @@ resource "github_repository" "repo" {
   allow_update_branch    = true
   delete_branch_on_merge = true
 
+  squash_merge_commit_title   = "PR_TITLE"
+  squash_merge_commit_message = "PR_BODY"
+
   vulnerability_alerts = true
 
   security_and_analysis {

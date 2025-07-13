@@ -43,10 +43,10 @@ module "blog" {
   pages_cname = "blog.albertodonato.net"
 }
 
-module "dot_emacs_d" {
+module "emacs_d" {
   source = "./repo"
 
-  name        = "dot-emacs.d"
+  name        = "emacs.d"
   description = "My own Emacs config"
   topics = [
     "emacs",

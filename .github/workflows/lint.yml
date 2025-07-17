@@ -18,7 +18,16 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+
       - name: Lint
         run: |
+          terraform fmt -recursive -check
+          tflint -f compact --recursive
+
+      - name: Validate
+        run: |
           terraform init
-          terraform fmt -check
+          terraform validate
+          

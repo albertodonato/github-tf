@@ -9,19 +9,16 @@ module "ads_b_snap" {
   ]
 }
 
-module "shell_d" {
+module "bash_d" {
   source = "./repo"
 
   name        = "bash.d"
-  description = "Shell configuration files and scripts"
+  description = "Bash configuration"
   topics = [
     "bash",
     "bashrc",
     "bashrc-configs",
     "shell",
-    "zsh",
-    "zsh-configuration",
-    "zshrc",
   ]
 
   has_issues = false

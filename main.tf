@@ -256,7 +256,7 @@ module "sonarr_snap" {
 module "shell_scripts" {
   source = "./repo"
 
-  name = "shell-scripts"
+  name        = "shell-scripts"
   description = "Collection of shell scripts"
   topics = [
     "shell",

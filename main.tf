@@ -294,3 +294,18 @@ module "toolrack" {
     "utility-library",
   ]
 }
+
+module "zsh_d" {
+  source = "./repo"
+
+  name        = "zsh.d"
+  description = "Zsh configuration"
+  topics = [
+    "shell",
+    "zsh",
+    "zsh-configs",
+    "zshrc",
+  ]
+
+  has_issues = false
+}

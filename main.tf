@@ -64,8 +64,12 @@ module "github_tf" {
   name        = "github-tf"
   description = "Terraform setup for GitHub repositories"
   topics = [
-    "terraform",
     "github",
+    "terraform",
+  ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
   ]
 
   has_issues = false
@@ -108,10 +112,14 @@ module "metapackages" {
   description  = "Repository with metapackages"
   homepage_url = "https://repo.albertodonato.net"
   topics = [
+    "arch",
     "deb",
     "debian",
-    "arch",
     "packaging",
+  ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
   ]
 
   has_issues  = false
@@ -157,8 +165,8 @@ module "prometheus_aioexporter" {
     "python-library",
   ]
   dependencies_labels = [
-    "github_actions",
     "dependencies",
+    "github_actions",
   ]
 }
 
@@ -187,8 +195,8 @@ module "query_exporter" {
     "sql",
   ]
   dependencies_labels = [
-    "github_actions",
     "dependencies",
+    "github_actions",
     "python",
   ]
   action_variables = {

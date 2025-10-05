@@ -20,6 +20,10 @@ module "bash_d" {
     "bashrc-configs",
     "shell",
   ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
+  ]
 
   has_issues = false
 }
@@ -292,6 +296,11 @@ module "toolrack" {
   topics = [
     "python-library",
     "utility-library",
+  ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
+    "python",
   ]
 }
 

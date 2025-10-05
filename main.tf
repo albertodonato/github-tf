@@ -206,6 +206,9 @@ module "query_exporter" {
   action_variables = {
     DOCKERHUB_USERNAME = "adonato"
   }
+  action_environments = {
+    pypy = "*.*.*"
+  }
 
   has_discussions = true
 }

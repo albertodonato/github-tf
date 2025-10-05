@@ -75,3 +75,9 @@ variable "pages_cname" {
   type        = string
   default     = null
 }
+
+variable "action_environments" {
+  description = "Map action environment names to their tag pattern"
+  type        = map(string)
+  default     = {}
+}

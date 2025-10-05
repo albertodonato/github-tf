@@ -172,6 +172,9 @@ module "prometheus_aioexporter" {
     "dependencies",
     "github_actions",
   ]
+  action_environments = {
+    pypy = "*.*.*"
+  }
 }
 
 module "python_skeleton" {

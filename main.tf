@@ -131,6 +131,21 @@ module "metapackages" {
   pages_cname = "repo.albertodonato.net"
 }
 
+module "mod_desktop_nix" {
+  source = "./repo"
+
+  name        = "mod-desktop-nix"
+  description = "Nix package for MOD Desktop"
+  topics = [
+    "audio",
+    "nix",
+    "nixos",
+    "packaging",
+  ]
+
+  has_issues = false
+}
+
 module "pelican_chemistry" {
   source = "./repo"
 

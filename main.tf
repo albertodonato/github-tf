@@ -188,7 +188,7 @@ module "prometheus_aioexporter" {
     "github_actions",
   ]
   action_environments = {
-    pypy = "*.*.*"
+    pypi = "*.*.*"
   }
 }
 
@@ -225,7 +225,7 @@ module "query_exporter" {
     DOCKERHUB_USERNAME = "adonato"
   }
   action_environments = {
-    pypy = "*.*.*"
+    pypi = "*.*.*"
   }
 
   has_discussions = true

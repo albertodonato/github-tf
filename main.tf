@@ -131,13 +131,12 @@ module "metapackages" {
   pages_cname = "repo.albertodonato.net"
 }
 
-module "mod_desktop_nix" {
+module "nix_packages" {
   source = "./repo"
 
-  name        = "mod-desktop-nix"
-  description = "Nix package for MOD Desktop"
+  name        = "nix-packages"
+  description = "Personal Nix packages repository"
   topics = [
-    "audio",
     "nix",
     "nixos",
     "packaging",

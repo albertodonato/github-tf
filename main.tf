@@ -141,6 +141,10 @@ module "nix_packages" {
     "nixos",
     "packaging",
   ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
+  ]
 
   has_issues = false
 }
@@ -305,22 +309,6 @@ module "sshoot" {
     "ssh",
     "sshuttle",
     "vpn",
-  ]
-}
-
-module "toolrack" {
-  source = "./repo"
-
-  name        = "toolrack"
-  description = "Collection of reusable functions and classes, and a few scripts too"
-  topics = [
-    "python-library",
-    "utility-library",
-  ]
-  dependencies_labels = [
-    "dependencies",
-    "github_actions",
-    "python",
   ]
 }
 

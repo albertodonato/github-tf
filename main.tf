@@ -79,6 +79,23 @@ module "github_tf" {
   has_issues = false
 }
 
+module "github_workflows" {
+  source = "./repo"
+
+  name        = "github-workflows"
+  description = "Reusable GitHub workflows"
+  topics = [
+    "github",
+    "workflows",
+  ]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
+  ]
+
+  has_issues = false
+}
+
 module "h2static" {
   source = "./repo"
 

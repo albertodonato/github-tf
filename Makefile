@@ -1,5 +1,7 @@
 TF ?= tofu
 
+all: lint validate
+
 lint:
 	$(TF) fmt -recursive -check
 	tflint -f compact --recursive

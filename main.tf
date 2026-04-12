@@ -64,14 +64,15 @@ module "emacs_d" {
   has_issues = false
 }
 
-module "github_tf" {
+module "github_iac" {
   source = "./repo"
 
-  name        = "github-tf"
-  description = "Terraform setup for GitHub repositories"
+  name        = "github-iac"
+  description = "IAC setup for GitHub repositories"
   topics = [
     "github",
-    "terraform",
+    "iac",
+    "iac-terraform",
   ]
   dependencies_labels = [
     "dependencies",

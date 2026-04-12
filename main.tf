@@ -28,12 +28,12 @@ module "bash_d" {
   has_issues = false
 }
 
-module "blog" {
+module "albertodonato_net" {
   source = "./repo"
 
-  name         = "blog"
-  description  = "My personal blog"
-  homepage_url = "https://blog.albertodonato.net"
+  name         = "albertodonato.net"
+  description  = "Personal homepage"
+  homepage_url = "https://albertodonato.net"
   topics = [
     "blog",
     "pelican",
@@ -47,7 +47,7 @@ module "blog" {
 
   has_issues  = false
   has_pages   = true
-  pages_cname = "blog.albertodonato.net"
+  pages_cname = "albertodonato.net"
 }
 
 module "emacs_d" {

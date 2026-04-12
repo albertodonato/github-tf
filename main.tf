@@ -40,7 +40,9 @@ module "blog" {
   ]
   dependencies_labels = [
     "dependencies",
-    "python",
+    "github_actions",
+    "pre_commit",
+    "python:uv",
   ]
 
   has_issues  = false
@@ -206,6 +208,7 @@ module "prometheus_aioexporter" {
   dependencies_labels = [
     "dependencies",
     "github_actions",
+    "pre_commit",
   ]
   action_environments = {
     pypi = "*.*.*"
@@ -218,6 +221,12 @@ module "python_skeleton" {
   name        = "python-skeleton"
   description = "Helper script to setup Python projects"
   topics      = ["python"]
+  dependencies_labels = [
+    "dependencies",
+    "github_actions",
+    "pre_commit",
+    "python:uv",
+  ]
 
   has_issues = false
 }
@@ -239,7 +248,8 @@ module "query_exporter" {
   dependencies_labels = [
     "dependencies",
     "github_actions",
-    "python",
+    "pre_commit",
+    "python:uv",
   ]
   action_variables = {
     DOCKERHUB_USERNAME = "adonato"

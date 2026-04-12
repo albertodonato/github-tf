@@ -48,18 +48,26 @@ locals {
   ]
 
   dependencies_labels = {
-    dependencies = {
+    "dependencies" = {
       description = "Pull requests that update a dependency file"
       color       = "0366d6"
     }
-    github_actions = {
+    "github_actions" = {
       description = "Pull requests that update GitHub Actions code"
       color       = "000000"
     }
-    python = {
+    "pre_commit" = {
+      description = "Pull requests that update pre_commit code"
+      color       = "000000"
+    },
+    "python" = {
       description = "Pull requests that update python code"
       color       = "2b67c6"
     }
+    "python:uv" = {
+      description = "Pull requests that update python:uv code"
+      color       = "2b67c6"
+    },
   }
 }
 

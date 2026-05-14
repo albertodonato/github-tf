@@ -169,17 +169,6 @@ module "nix_packages" {
   has_issues = false
 }
 
-module "pelican_chemistry" {
-  source = "./repo"
-
-  name        = "pelican-chemistry"
-  description = "A minimalistic responsive Pelican theme"
-  topics = [
-    "pelican",
-    "pelican-theme",
-  ]
-}
-
 module "process_stats_exporter" {
   source = "./repo"
 
